@@ -1,0 +1,285 @@
+{
+    "name": "Cybercafe",
+    "author": "OriginalSwayze",
+    "description": "It's 1999, you're in an internet café and you've just discovered online gaming. Steam becomes a web browser: a gradient caption bar, a silver toolbar with big Back/Forward and toolbar buttons, an address bar showing the URL of what you're viewing with a spinning globe, a SITE MAP frame of underlined game links beside a starry homepage, a status bar with a scrolling ticker and a visitor counter, a mouse sparkle trail, and a dial-up connection on boot.",
+    "version": "1.0.0",
+    "tags": [
+        "Retro",
+        "90s",
+        "Web",
+        "Nostalgia",
+        "Fun"
+    ],
+    "header_image": "https://raw.githubusercontent.com/OriginalSwayze/Cybercafe/main/media/library.gif",
+    "splash_image": "https://raw.githubusercontent.com/OriginalSwayze/Cybercafe/main/media/gamepage.png",
+    "github": {
+        "owner": "OriginalSwayze",
+        "repo_name": "Cybercafe"
+    },
+    "Steam-WebKit": "webkit.css",
+    "Conditions": {
+        "Homepage": {
+            "description": "Navy, Black, Teal or Purple page background.",
+            "tab": "Appearance",
+            "default": "Navy",
+            "values": {
+                "Navy": {},
+                "Black": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/page-black.css"
+                    }
+                },
+                "Teal": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/page-teal.css"
+                    }
+                },
+                "Purple": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/page-purple.css"
+                    }
+                }
+            }
+        },
+        "Stars": {
+            "description": "The tiled star field.",
+            "tab": "Appearance",
+            "default": "On",
+            "values": {
+                "On": {},
+                "Off": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/stars-off.css"
+                    }
+                }
+            }
+        },
+        "Sparkle trail": {
+            "description": "Little sparkles that follow the mouse.",
+            "tab": "Appearance",
+            "default": "On",
+            "values": {
+                "On": {},
+                "Off": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam$"
+                        ],
+                        "src": "options/sparkles-off.css"
+                    }
+                }
+            }
+        },
+        "Ticker": {
+            "description": "The scrolling message in the status bar.",
+            "tab": "Appearance",
+            "default": "On",
+            "values": {
+                "On": {},
+                "Off": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam$"
+                        ],
+                        "src": "options/ticker-off.css"
+                    }
+                }
+            }
+        },
+        "Game list density": {
+            "description": "Row size in the game list.",
+            "tab": "Layout",
+            "default": "Comfortable",
+            "values": {
+                "Comfortable": {},
+                "Compact": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam$"
+                        ],
+                        "src": "options/list-compact.css"
+                    }
+                }
+            }
+        },
+        "What's New shelf": {
+            "description": "The What's New carousel on the library home.",
+            "tab": "Layout",
+            "default": "Show",
+            "values": {
+                "Show": {},
+                "Hide": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam$"
+                        ],
+                        "src": "options/hide-whats-new.css"
+                    }
+                }
+            }
+        },
+        "Readout": {
+            "description": "The address bar, spinning globe and visitor counter.",
+            "tab": "Layout",
+            "default": "On",
+            "values": {
+                "On": {},
+                "Off": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam$"
+                        ],
+                        "src": "options/hud-off.css"
+                    }
+                }
+            }
+        },
+        "Startup screen": {
+            "description": "The dial-up connection when Steam opens.",
+            "tab": "Motion",
+            "default": "On",
+            "values": {
+                "On": {},
+                "Off": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam$"
+                        ],
+                        "src": "options/boot-off.css"
+                    }
+                }
+            }
+        },
+        "Motion": {
+            "description": "Full: everything. Calm: hovers only, the backdrop stands still. Still: no theme motion.",
+            "tab": "Motion",
+            "default": "Full",
+            "values": {
+                "Full": {},
+                "Calm": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/motion-calm.css"
+                    }
+                },
+                "Still": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/motion-still.css"
+                    }
+                }
+            }
+        },
+        "Privacy": {
+            "description": "Blur your account name and wallet until hovered.",
+            "tab": "Extras",
+            "default": "Off",
+            "values": {
+                "Off": {},
+                "Blur": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam$"
+                        ],
+                        "src": "options/privacy.css"
+                    }
+                }
+            }
+        },
+        "Contrast": {
+            "description": "High: solid panels and brighter secondary text.",
+            "tab": "Accessibility",
+            "default": "Normal",
+            "values": {
+                "Normal": {},
+                "High": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/contrast-high.css"
+                    }
+                }
+            }
+        },
+        "Focus rings": {
+            "description": "Strong: a thick, high-visibility outline on whatever has keyboard or controller focus.",
+            "tab": "Accessibility",
+            "default": "Standard",
+            "values": {
+                "Standard": {},
+                "Strong": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/focus-strong.css"
+                    }
+                }
+            }
+        },
+        "Text size": {
+            "description": "Large: bigger game list and body text.",
+            "tab": "Accessibility",
+            "default": "Normal",
+            "values": {
+                "Normal": {},
+                "Large": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/text-large.css"
+                    }
+                }
+            }
+        }
+    },
+    "Patches": [
+        {
+            "MatchRegexString": "^Steam$",
+            "TargetCss": "main.css",
+            "TargetJs": "js/main.js"
+        },
+        {
+            "MatchRegexString": ".ModalDialogPopup",
+            "TargetCss": "main.css"
+        },
+        {
+            "MatchRegexString": ".FullModalOverlay",
+            "TargetCss": "main.css"
+        },
+        {
+            "MatchRegexString": ".friendsui-container",
+            "TargetCss": "friends.css"
+        },
+        {
+            "MatchRegexString": ".ContextMenuPopup",
+            "TargetCss": "popup.css"
+        },
+        {
+            "MatchRegexString": ".DesktopToastContainer",
+            "TargetCss": "toast.css"
+        },
+        {
+            "MatchRegexString": "^Sign in to Steam$",
+            "TargetCss": "login.css"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+/* CYBERCAFE — controls */
+html .DialogButton { border-radius: 0 !important; background: var(--cc-silver) !important; box-shadow: var(--cc-raised), 0 0 0 1px #000 !important; color: #000 !important; font-family: var(--cc-ui) !important; font-size: 12px !important; text-transform: none !important; letter-spacing: 0 !important; }
+html .DialogButton:not(.Disabled):not(:disabled):hover { transform: none !important; }
+html .DialogButton:not(.Disabled):not(:disabled):active { box-shadow: var(--cc-sunken), 0 0 0 1px #000 !important; }
+html .DialogButton.Primary, html button.DialogButton.Primary { box-shadow: var(--cc-raised), 0 0 0 2px #000 !important; font-weight: 700 !important; }
+html :is(.DialogInput, .DialogTextInputBase) { border-radius: 0 !important; background-color: #fff !important; color: #000 !important; border: none !important; box-shadow: var(--cc-sunken) !important; }
+html .DialogDropDown { border-radius: 0 !important; background-color: #fff !important; border: none !important; box-shadow: var(--cc-sunken) !important; }
+html .DialogDropDown, html .DialogDropDown * { color: #000 !important; }
+html .MainPanel .ShowcaseHeader .DialogDropDown, html .MainPanel .DialogDropDown:not(.DialogDropDown_Popup) { background: transparent !important; box-shadow: none !important; }
+html .MainPanel .ShowcaseHeader .DialogDropDown * { color: var(--cc-yellow) !important; }
+html .ToggleRail { border-radius: 0 !important; background: #fff !important; box-shadow: var(--cc-sunken) !important; }
+html .Toggle.On .ToggleRail, html .Toggle[class*="On"] .ToggleRail { background: #000080 !important; }
+html .ToggleSwitch { border-radius: 0 !important; background: var(--cc-silver) !important; box-shadow: var(--cc-raised) !important; }
+html .DialogCheckbox { border-radius: 0 !important; background: #fff !important; border: none !important; box-shadow: var(--cc-sunken) !important; }
+html .DialogCheckbox svg path { fill: #000 !important; }
+html .GenericConfirmDialog, html .ModalPosition_Content > .DialogContent { border-radius: 0 !important; background: var(--cc-title) 3px 3px / calc(100% - 6px) 22px no-repeat, var(--cc-silver) !important; box-shadow: var(--cc-raised), 6px 6px 0 rgba(0,0,0,.5) !important; padding-top: 30px !important; color: #000 !important; }
+html :is(.GenericConfirmDialog, .ModalPosition_Content > .DialogContent) :is(.DialogBodyText, .DialogLabel, p, span, div) { color: #000; }
+html .DialogHeader { font-family: var(--cc-display) !important; text-transform: none !important; letter-spacing: 0 !important; }
+html .PagedSettingsDialog_PageListColumn .PagedSettingsDialog_Title { background: none !important; -webkit-text-fill-color: var(--cc-yellow); font-family: var(--cc-display) !important; text-transform: none !important; letter-spacing: 0 !important; text-shadow: 2px 2px 0 #000; }
+html .PagedSettingsDialog_PageList .PagedSettingsDialog_PageListItem { border-radius: 0 !important; font-family: var(--cc-ui); }
+html .PagedSettingsDialog_PageList .PagedSettingsDialog_PageListItem.Active { background: #000080 !important; color: #fff !important; box-shadow: none !important; }
+html .PagedSettingsDialog_PageList .PagedSettingsDialog_PageListItem.Active::before { display: none !important; }
+html .PagedSettingsDialog .SettingsDialogSubHeader { color: var(--cc-lime) !important; font-family: var(--cc-ui) !important; font-weight: 700; }

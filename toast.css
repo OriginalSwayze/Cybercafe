@@ -1,0 +1,13 @@
+/* Cybercafe — desktop notifications. */
+@import url("./core/alias.css");
+@import url("./core/tokens.css");
+@import url("./core/base.css");
+html:has(> body.DesktopToastContainer),
+html body.DesktopToastContainer { background: transparent !important; }
+html .DesktopToastContainer .DesktopToastBackground,
+html .DesktopToastContainer .DesktopToastTemplate { background: transparent !important; }
+/* CYBERCAFE notifications: "You've got a message!" */
+html .DesktopToastContainer .DesktopToastPopup { position: relative; border-radius: 0 !important; border: none !important; background: #C9C6BE !important; box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #2E2C28, 3px 3px 0 rgba(0,0,0,.4) !important; padding-top: 24px; }
+html .DesktopToastContainer .DesktopToastPopup::after { content: "You've got a message!"; position: absolute; left: 3px; right: 3px; top: 3px; height: 18px; line-height: 18px; padding-left: 6px; font: 700 11px Tahoma, sans-serif; color: #fff; background: linear-gradient(90deg, #0A1E7A, #1D84C6); z-index: 3; }
+html .DesktopToastContainer .DesktopToastTemplate :is(.Header .Title,.GroupMessageUserName,.IngameTitle) { font-family: Tahoma, sans-serif !important; font-weight: 700 !important; color: #000080 !important; }
+html .DesktopToastContainer .DesktopToastTemplate :is(.StandardNotificationDescription,.GroupMessageBody,.StandardNotificationSubText) { font-family: Tahoma, sans-serif !important; color: #000 !important; }

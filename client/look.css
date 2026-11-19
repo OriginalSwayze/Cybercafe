@@ -1,0 +1,105 @@
+/* CYBERCAFE — the look */
+html :is(.UpdatesContainer .Name, .ShowcaseHeader .Focusable, .ShowcaseHeader .DialogDropDown_CurrentDisplay, .AppDetailsSection .SectionHeader, h2.SectionHeader, .HomeBox .Bar .Label) {
+    font-family: var(--cc-display) !important; font-weight: 900 !important; text-transform: none !important; letter-spacing: 0 !important; color: var(--cc-yellow) !important; text-shadow: 2px 2px 0 #000;
+}
+html :is(.UpdatesContainer .Name, .ShowcaseHeader .Focusable, .ShowcaseHeader .DialogDropDown_CurrentDisplay) { font-size: 18px !important; }
+html :is(.AppDetailsSection .SectionHeader, h2.SectionHeader) { font-size: 14px !important; }
+html .AppDetailsSection .SectionHeader::before { content: "\2605" !important; width: auto !important; height: auto !important; background: none !important; box-shadow: none !important; transform: none !important; border-radius: 0 !important; margin-right: 6px; animation: cc-rainbow 3s linear infinite; }
+html :is(.PlayBar .PlayBarLabel, .UpdatesContainer .EventTime, .LeftListSizableContainer .SearchBar .MenuHeader .ViewName, .ReactVirtualized__List .SectionName) {
+    font-family: var(--cc-ui) !important; font-size: 11px !important; font-weight: 700 !important; letter-spacing: 0 !important; text-transform: none !important; color: var(--cc-lime) !important;
+}
+html .PlayBar :is(.LastPlayedInfo, .PlayBarDetailLabel) { font-family: var(--cc-ui) !important; font-size: 13px !important; color: #fff !important; }
+
+/* Title bar: a classic gradient caption */
+html .OuterFrame > .TopBar { background: var(--cc-title) !important; box-shadow: none !important; }
+html .RootMenuBar .RootMenuButton .SteamButton::before { width: 16px; height: 16px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #9FE8FF, #1D84C6 55%, #0A1E7A); box-shadow: inset 0 0 0 1px #000; animation: none; }
+html .RootMenuBar .RootMenuButton .SteamButton::after { content: "Cybercaf\00E9  Navigator - [My Games]"; font: 700 13px var(--cc-ui); color: #fff; }
+html .RootMenuBar .RootMenuButton { font-family: var(--cc-ui) !important; font-size: 12px !important; text-transform: none !important; color: #fff !important; border-radius: 0 !important; }
+html .RootMenuBar .RootMenuButton:hover { background: rgba(255,255,255,.15) !important; }
+html .TitleBarControls .Button, html .TitleBarControls .AccountMenu { border-radius: 0 !important; background: var(--cc-silver) !important; box-shadow: var(--cc-raised) !important; color: #000 !important; }
+html .TitleBarControls .Button svg, html .TitleBarControls .Button svg path { fill: #000 !important; color: #000 !important; }
+html .TitleBarControls .Button:hover, html .TitleBarControls .AccountMenu:hover { transform: none !important; }
+html .TitleBarControls .Button:active, html .TitleBarControls .AccountMenu:active { box-shadow: var(--cc-sunken) !important; }
+html .TitleBarControls .AccountMenu, html .TitleBarControls .AccountMenu * { font-family: var(--cc-ui) !important; font-size: 12px !important; color: #000 !important; }
+html .TitleBarControls .AccountMenu .avatarHolder, html .TitleBarControls .AccountMenu img.avatar { border-radius: 0 !important; }
+html .TitleBarControls .AccountMenu .WalletBalance { background: transparent !important; color: #006600 !important; }
+html .TitleBar .title-bar-actions .title-area-icon { border-radius: 0 !important; background: var(--cc-silver) !important; box-shadow: var(--cc-raised); width: 24px !important; height: 20px !important; margin: 0 1px; }
+html .TitleBar .title-bar-actions .title-area-icon svg, html .TitleBar .title-bar-actions .title-area-icon svg * { fill: #000 !important; stroke: #000 !important; }
+html .TitleBar .title-bar-actions .title-area-icon:hover { transform: none !important; }
+
+/* Frames: the site map and the page */
+html .Library > .Container > div:not(.MainPanel):first-child, html .MainPanel {
+    position: relative; border-radius: 0 !important; background: var(--cc-page-2) !important; box-shadow: var(--cc-ridge) !important; clip-path: none !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important;
+}
+html .MainPanel { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'160'%20height%3D'160'%3E%3Cg%20fill%3D'%23FFFFFF'%3E%3Crect%20x%3D'12'%20y%3D'20'%20width%3D'1'%20height%3D'1'%2F%3E%3Crect%20x%3D'70'%20y%3D'8'%20width%3D'2'%20height%3D'2'%2F%3E%3Crect%20x%3D'130'%20y%3D'40'%20width%3D'1'%20height%3D'1'%2F%3E%3Crect%20x%3D'40'%20y%3D'90'%20width%3D'1'%20height%3D'1'%2F%3E%3Crect%20x%3D'100'%20y%3D'120'%20width%3D'2'%20height%3D'2'%20fill%3D'%23FFFF99'%2F%3E%3Crect%20x%3D'150'%20y%3D'140'%20width%3D'1'%20height%3D'1'%2F%3E%3Crect%20x%3D'20'%20y%3D'140'%20width%3D'1'%20height%3D'1'%2F%3E%3Crect%20x%3D'88'%20y%3D'60'%20width%3D'1'%20height%3D'1'%20fill%3D'%2399CCFF'%2F%3E%3C%2Fg%3E%3Cpath%20d%3D'M118%2086l2%205%205%20.5-4%203%201.5%205-4.5-3-4.5%203%201.5-5-4-3%205-.5z'%20fill%3D'%23FFFF66'%20opacity%3D'.55'%2F%3E%3C%2Fsvg%3E") 0 0 / 160px 160px, var(--cc-page) !important; }
+html .MainPanel::after { display: none !important; }
+html .Library > .Container > div:not(.MainPanel):first-child { padding-top: 34px !important; box-sizing: border-box; }
+html .Library > .Container > div:not(.MainPanel):first-child::before {
+    content: "~*~ SITE MAP ~*~" !important; position: absolute; left: 0; right: 0; top: 6px; text-align: center; z-index: 5; display: block !important;
+    font: 900 14px var(--cc-display); color: var(--cc-yellow); text-shadow: 2px 2px 0 #000;
+}
+
+/* Site map (game list): hyperlinks */
+html .HomeBox .Bar.Selected { background: transparent !important; box-shadow: none !important; }
+html .HomeBox .Bar .Label { font-size: 14px !important; }
+html .SearchInput input.DialogInput, html .SearchInput input.DialogTextInputBase { border-radius: 0 !important; background-color: #fff !important; color: #000 !important; border: none !important; box-shadow: var(--cc-sunken) !important; font-family: var(--cc-ui) !important; font-size: 12px !important; }
+html .SearchInput input::placeholder { color: #666 !important; }
+html .ReactVirtualized__List .SectionRule { height: 2px !important; background: transparent !important; box-shadow: inset 0 1px 0 var(--cc-shadow), inset 0 -1px 0 #fff; opacity: .5; }
+html .ReactVirtualized__List .Container:has(> .GameListEntryContainer) { border-radius: 0 !important; transition: none !important; }
+html .ReactVirtualized__List .GameListEntryContainer > span { font-family: var(--cc-body) !important; font-size: 12px !important; color: var(--cc-link) !important; text-decoration: underline; text-underline-offset: 2px; }
+html .ReactVirtualized__List .Container:not(.Installed):has(> .GameListEntryContainer) .GameListEntryContainer > span { color: var(--cc-visited) !important; }
+html .ReactVirtualized__List .Container:has(> .GameListEntryContainer):hover { background: transparent !important; }
+html .ReactVirtualized__List .Container:has(> .GameListEntryContainer):hover .GameListEntryContainer > span { color: #FF3333 !important; }
+html .ReactVirtualized__List .Container:has(> .GameListEntryContainer):hover .GameListEntryContainer { transform: none !important; }
+html body .ReactVirtualized__List .Container.Selected.Selected:has(> .GameListEntryContainer) { background: var(--cc-yellow) !important; box-shadow: none !important; }
+html body .ReactVirtualized__List .Container.Selected.Selected:has(> .GameListEntryContainer) .GameListEntryContainer > span { color: #000 !important; font-weight: 700 !important; }
+html .ReactVirtualized__List .Container.Selected:has(> .GameListEntryContainer)::before { display: none !important; }
+html .ReactVirtualized__List .Container.Running:has(> .GameListEntryContainer) .GameListEntryContainer > span::after { content: " NEW!"; font: 900 10px var(--cc-display); color: var(--cc-red); text-decoration: none; display: inline-block; animation: cc-blink .8s steps(1) infinite; }
+
+/* Home */
+html .UpdatesContainer { background: transparent !important; }
+html .UpdatesContainer .HoversEnabled, html .LibraryItemBox, html .LibraryItemBox > * { border-radius: 0 !important; }
+html .LibraryItemBox { box-shadow: 0 0 0 2px #0000EE !important; transition: none !important; }
+html .LibraryItemBox:hover { transform: none !important; box-shadow: 0 0 0 2px #FF3333 !important; }
+html .LibraryItemBox::after, html .LibraryItemBoxShine { display: none !important; }
+html .PageLeft, html .PageRight { border-radius: 0 !important; background: var(--cc-silver) !important; box-shadow: var(--cc-raised) !important; }
+html :is(.PageLeft, .PageRight) svg, html :is(.PageLeft, .PageRight) svg * { fill: #000 !important; stroke: #000 !important; }
+html :is(.PageLeft, .PageRight):active { box-shadow: var(--cc-sunken) !important; }
+html .ShowcaseHeader .Rule, html .AddShowcaseRow .Rule { height: 3px !important; background: linear-gradient(90deg, #FF3333, #FFFF33, #66FF66, #33CCFF, #CC99FF) !important; }
+
+/* Game page */
+html .AppDetailsMain .TopCapsule { border-radius: 0 !important; box-shadow: var(--cc-ridge); }
+html .AppDetailsMain .PlayBar > .InnerContainer { border-radius: 0 !important; background: var(--cc-silver) !important; box-shadow: var(--cc-raised) !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
+html .AppDetailsMain .PlayBar :is(.LastPlayedInfo, .PlayBarDetailLabel) { color: #000 !important; }
+html body .AppDetailsMain .PlayBar .PlayBarLabel.PlayBarLabel { color: #000080 !important; }
+html .AppDetailsMain .PlayBar svg:not(.PlayButton svg) :is(path, circle, rect) { fill: #333 !important; }
+html .PlayButton.ButtonChild { border-radius: 0 !important; background: var(--cc-silver) !important; box-shadow: var(--cc-raised), 0 0 0 1px #000 !important; animation: none !important; }
+html .PlayButton.ButtonChild .ButtonText { font-family: var(--cc-display) !important; font-weight: 900 !important; font-size: 16px !important; letter-spacing: 0 !important; text-transform: none !important; color: #000 !important; }
+html .PlayButton.ButtonChild .ButtonText::after { content: " Now!"; }
+html .PlayButton.ButtonChild svg, html .PlayButton.ButtonChild svg path { fill: #008000 !important; }
+html .PlayButton.ButtonChild::after { display: none !important; }
+html .PlayButton.ButtonChild:hover { transform: none !important; }
+html .PlayButton.ButtonChild:active { box-shadow: var(--cc-sunken), 0 0 0 1px #000 !important; }
+html .PlayBar .RightControls .MenuButton { border-radius: 0 !important; background: var(--cc-silver) !important; box-shadow: var(--cc-raised) !important; }
+html .PlayBar .RightControls .MenuButton svg, html .PlayBar .RightControls .MenuButton svg * { fill: #000 !important; }
+html .LinksSection .LinkInner { border-radius: 0 !important; background: transparent !important; box-shadow: none !important; color: var(--cc-link) !important; font-family: var(--cc-body) !important; font-size: 12px !important; text-transform: none !important; letter-spacing: 0 !important; text-decoration: underline; }
+html .LinksSection .LinkInner { display: inline-flex !important; flex-direction: row !important; align-items: center !important; white-space: nowrap !important; }
+html .LinksSection .LinkInner::before { content: "["; color: #fff; margin-right: 3px; }
+html .LinksSection .LinkInner::after { content: "]"; color: #fff; margin-left: 3px; }
+html .LinksSection .LinkInner:hover { color: #FF3333 !important; transform: none !important; }
+html .AppDetailsSection:not(.LinksSection) > .Panel, html .PartnerEvent.Event { border-radius: 0 !important; background: rgba(0,0,40,.75) !important; box-shadow: inset 0 0 0 1px var(--t-line) !important; }
+html .PartnerEventFeaturedHeader { background: var(--cc-title) !important; color: #fff !important; font-family: var(--cc-ui) !important; font-weight: 700; }
+html .ProgressBar .Unlocked, html .ProgressBar [class*="Unlocked"], html .PlayBar .DetailsProgressBar { border-radius: 0 !important; background: repeating-linear-gradient(90deg, #000080 0 8px, transparent 8px 10px) !important; box-shadow: none !important; }
+html .ProgressBar, html .PlayBar .DetailsProgressContainer { border-radius: 0 !important; background: #fff !important; box-shadow: var(--cc-sunken) !important; }
+
+/* Sparkle trail */
+.cc-spark { position: fixed; z-index: 9999; pointer-events: none; font-size: 12px; line-height: 1; animation: cc-sparkle .8s ease-out forwards; }
+
+/* Startup: dial-up */
+html .od-boot.cc-dial { position: fixed; inset: 0; z-index: 10000; pointer-events: none; display: grid; place-items: center; background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'160'%20height%3D'160'%3E%3Cg%20fill%3D'%23FFFFFF'%3E%3Crect%20x%3D'12'%20y%3D'20'%20width%3D'1'%20height%3D'1'%2F%3E%3Crect%20x%3D'70'%20y%3D'8'%20width%3D'2'%20height%3D'2'%2F%3E%3Crect%20x%3D'130'%20y%3D'40'%20width%3D'1'%20height%3D'1'%2F%3E%3Crect%20x%3D'40'%20y%3D'90'%20width%3D'1'%20height%3D'1'%2F%3E%3Crect%20x%3D'100'%20y%3D'120'%20width%3D'2'%20height%3D'2'%20fill%3D'%23FFFF99'%2F%3E%3Crect%20x%3D'150'%20y%3D'140'%20width%3D'1'%20height%3D'1'%2F%3E%3Crect%20x%3D'20'%20y%3D'140'%20width%3D'1'%20height%3D'1'%2F%3E%3Crect%20x%3D'88'%20y%3D'60'%20width%3D'1'%20height%3D'1'%20fill%3D'%2399CCFF'%2F%3E%3C%2Fg%3E%3Cpath%20d%3D'M118%2086l2%205%205%20.5-4%203%201.5%205-4.5-3-4.5%203%201.5-5-4-3%205-.5z'%20fill%3D'%23FFFF66'%20opacity%3D'.55'%2F%3E%3C%2Fsvg%3E") 0 0 / 160px 160px, #000033; animation: cc-out 100ms steps(1) 3800ms forwards; }
+html .od-boot.cc-dial .win { width: 420px; background: var(--cc-silver); box-shadow: var(--cc-raised), 4px 4px 0 rgba(0,0,0,.5); padding: 3px; font: 12px var(--cc-ui); color: #000; }
+html .od-boot.cc-dial .cap { background: var(--cc-title); color: #fff; font-weight: 700; padding: 3px 6px; }
+html .od-boot.cc-dial .body { padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+html .od-boot.cc-dial .l { opacity: 0; animation: mr-fade-up 1ms steps(1) forwards; }
+html .od-boot.cc-dial .bar { height: 18px; background: #fff; box-shadow: var(--cc-sunken); padding: 3px; box-sizing: border-box; }
+html .od-boot.cc-dial .bar i { display: block; height: 100%; width: 0; background: repeating-linear-gradient(90deg, #000080 0 10px, transparent 10px 12px); animation: cc-dial 3s steps(30) 300ms forwards; }

@@ -1,0 +1,17 @@
+/* CYBERCAFE — base */
+html, body { font-family: var(--cc-body) !important; color: #fff; }
+::selection { background: #000080; color: #fff; }
+:where(:focus-visible) { outline: 1px dotted #fff; outline-offset: -2px; }
+::-webkit-scrollbar { width: 16px; height: 16px; background: var(--cc-silver); }
+::-webkit-scrollbar-track { background: repeating-conic-gradient(var(--cc-silver) 0 25%, #fff 0 50%) 0 0 / 2px 2px; }
+::-webkit-scrollbar-thumb { background: var(--cc-silver); box-shadow: var(--cc-raised); }
+::-webkit-scrollbar-button:single-button { display: block; height: 16px; width: 16px; background: var(--cc-silver); box-shadow: var(--cc-raised); }
+::-webkit-scrollbar-corner { background: var(--cc-silver); }
+@keyframes mr-fade-up { from { opacity: 0; } to { opacity: 1; } }
+@keyframes cc-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+@keyframes cc-marquee { from { text-indent: 100%; } to { text-indent: -1600px; } }
+@keyframes cc-spin { to { transform: rotate(360deg); } }
+@keyframes cc-rainbow { 0% { color: #FF3333; } 20% { color: #FFFF33; } 40% { color: #66FF66; } 60% { color: #33CCFF; } 80% { color: #CC99FF; } 100% { color: #FF3333; } }
+@keyframes cc-sparkle { 0% { opacity: 1; transform: translate(0, 0) scale(1); } 100% { opacity: 0; transform: translate(var(--dx), 26px) scale(.3); } }
+@keyframes cc-dial { from { width: 0; } to { width: 100%; } }
+@keyframes cc-out { to { opacity: 0; visibility: hidden; } }

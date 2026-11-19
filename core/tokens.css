@@ -1,0 +1,42 @@
+/* CYBERCAFE — tokens. Silver browser chrome, a navy starry page, cyan links, yellow headings. */
+:root {
+    --cc-silver: #C9C6BE;
+    --cc-silver-2: #E4E1DA;
+    --cc-shadow: #7E7B74;
+    --cc-dark: #2E2C28;
+    --cc-page: var(--cc-p-page, #000033);
+    --cc-page-2: color-mix(in srgb, var(--cc-page) 75%, #1E2A6E);
+    --cc-link: var(--cc-p-link, #33CCFF);
+    --cc-visited: #CC99FF;
+    --cc-yellow: var(--cc-p-head, #FFFF33);
+    --cc-lime: #66FF66;
+    --cc-red: #FF3333;
+    --cc-title: linear-gradient(90deg, #0A1E7A, #1D84C6);
+    --cc-raised: inset 1px 1px 0 #fff, inset -1px -1px 0 var(--cc-dark), inset 2px 2px 0 var(--cc-silver-2), inset -2px -2px 0 var(--cc-shadow);
+    --cc-sunken: inset 1px 1px 0 var(--cc-shadow), inset -1px -1px 0 #fff, inset 2px 2px 0 var(--cc-dark), inset -2px -2px 0 var(--cc-silver-2);
+    --cc-ridge: 0 0 0 1px var(--cc-shadow), 0 0 0 2px #fff, 0 0 0 4px var(--cc-silver), 0 0 0 5px var(--cc-shadow);
+    --cc-ui: Tahoma, Verdana, "Segoe UI", sans-serif;
+    --cc-body: Verdana, Tahoma, sans-serif;
+    --cc-display: "Arial Black", "Arial Bold", Arial, sans-serif;
+    --cc-serif: "Times New Roman", Times, serif;
+    --t-accent: var(--cc-link);
+    --t-accent-2: var(--cc-yellow);
+    --t-alert: var(--cc-red);
+    --t-bg: var(--cc-page);
+    --t-panel: var(--cc-page-2);
+    --t-ink: #000;
+    --t-fg: #FFFFFF;
+    --t-fg-2: #D6DCF5;
+    --t-fg-3: #9AA6D6;
+    --t-fg-4: #5E6AA0;
+    --t-line: rgba(153,204,255,.22);
+    --mr-r: 0px; --mr-r-lg: 0px; --mr-r-md: 0px; --mr-r-sm: 0px; --mr-r-pill: 0px;
+    --mr-glass: var(--cc-page-2); --mr-glass-strong: var(--cc-page-2); --mr-glass-solid: var(--cc-page-2);
+    --mr-glass-filter: none; --mr-glass-edge: inset 0 0 0 1px var(--t-line);
+    --mr-font: var(--cc-body); --mr-font-display: var(--cc-display); --mr-font-mono: "Courier New", monospace;
+    --mr-grad: linear-gradient(var(--cc-link), var(--cc-link));
+    --mr-grad-soft: linear-gradient(90deg, rgba(51,204,255,.18), transparent 85%);
+    --mr-on-accent: #000;
+    --mr-t-1: 0ms; --mr-t-2: 0ms; --mr-t-3: 120ms;
+    --mr-spot: none;
+}

@@ -1,0 +1,16 @@
+/* Cybercafe — the "Sign in to Steam" window. */
+@import url("./core/alias.css");
+@import url("./core/tokens.css");
+@import url("./core/base.css");
+@import url("./core/backdrop.css");
+html .Login, html .Login.AnimatedBackground, html .LoginAnimatedBackground,
+html .Login .LoginStatusContainer, html .Login .SpinnerLoaderContainer { background: transparent !important; }
+html .Login.AnimatedBackground::before, html .LoginAnimatedBackground::after, html .Login video { display: none !important; }
+html .Login .SpinnerLoaderContainer { position: relative; }
+html .Login .SpinnerLoaderContainer > img { opacity: 0 !important; }
+/* CYBERCAFE sign-in */
+html .Login .SpinnerLoaderContainer::before { content: "Connecting... please wait"; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font: 13px Tahoma, sans-serif; color: #fff; white-space: nowrap; }
+html .Login .LoadingStatus, html .Login .LoadingStatus > .LoginStatus { font-family: Tahoma, sans-serif !important; color: #D6DCF5 !important; }
+html .Login .ProgressBar { border-radius: 0 !important; background: repeating-linear-gradient(90deg, #000080 0 8px, transparent 8px 10px) !important; }
+html .Login .Avatar img { border-radius: 0 !important; }
+html .Login .UserContainer > .PersonaName { font-family: "Arial Black", sans-serif !important; color: #FFFF33 !important; text-shadow: 2px 2px 0 #000; }
