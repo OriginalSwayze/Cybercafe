@@ -1,6 +1,6 @@
 # Cybercafe
 
-**It's 1999, you're in an internet café, and you've just discovered online gaming.** A [Millennium](https://steambrew.app) theme for the Steam client.
+**It's 1999, you're in an internet café, and you've just discovered online gaming.** A Steam client theme for [Beyond Steam](https://github.com/OriginalSwayze/Beyond-Steam) and [Millennium](https://steambrew.app).
 
 ![Cybercafe: library](media/library.gif)
 
@@ -16,13 +16,14 @@ Steam becomes a web browser:
 
 ## Install
 
-1. Install [Millennium](https://steambrew.app).
-2. Find **Cybercafe** in the Millennium theme browser, or download this repository into `Steam/millennium/themes/Cybercafe`.
-3. Open **Steam → Millennium → Themes** and pick **Cybercafe**.
+- **With [Beyond Steam](https://github.com/OriginalSwayze/Beyond-Steam) (easiest):** in Steam press **Ctrl+Shift+B**, open
+  **Get more** and install **Cybercafe**.
+- **By hand:** download **Cybercafe.zip** from the [latest release](https://github.com/OriginalSwayze/Cybercafe/releases/latest) and unzip
+  it into `%APPDATA%\Beyond Steam\themes\Cybercafe` (Beyond Steam) or `Steam\millennium\themes\Cybercafe` (Millennium).
 
 ## Options
 
-Open **Millennium → Themes → Cybercafe** to change:
+In Beyond Steam's **Theme options** tab (or **Millennium → Themes → Cybercafe**) you can change:
 
 Homepage (Navy, Black, Teal, Purple) · Stars · Sparkle trail · Ticker · Density · What's New · Readout · Startup screen · Motion · Privacy · Contrast · Focus rings · Text size
 
